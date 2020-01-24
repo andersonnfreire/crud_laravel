@@ -17,3 +17,4 @@ Route::post('/painel/create/store', 'painel\ProdutoController@store');
 Route::get('/painel/{id}/edit', 'painel\ProdutoController@edit');
 Route::put('/painel/{id}/update', 'painel\ProdutoController@updateProduto');
 Route::get('/', 'painel\ProdutoController@index');
+Route::resource('/produtos', 'painel\ProdutoController');

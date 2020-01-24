@@ -23,7 +23,7 @@
             <a href="" > 
                 
             </a>
-            <a href="{{url("/painel/delete/$product->id")}}" class="actions actions-over delete"> 
+            <a href="{{route('produtos.show',$product->id)}}" class="actions actions-over delete"> 
                 <i class="fas fa-low-vision"></i>
             </a>
         </td>

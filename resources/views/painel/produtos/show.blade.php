@@ -13,6 +13,7 @@
         <p>{{$error}}</p>
         @endforeach
     </div>
+@endif
 <form class="form" method="post" action="{{route('produtos.destroy', $produto->id)}}">
     {!! method_field('DELETE') !!}
     {!! csrf_field() !!}
