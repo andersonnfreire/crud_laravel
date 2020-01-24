@@ -34,7 +34,7 @@ class ProdutoController extends Controller {
      */
     public function create() {
         $title = 'Cadastro de Produtos';
-        $categorys = ['eletronicos', 'moveis', 'limpeza', 'banho'];
+        $categorys = ['eletronicos', 'moveis', 'limpezas', 'banho'];
         return view('painel.produtos.create-edit', compact('title', 'categorys'));
     }
 
@@ -112,7 +112,7 @@ class ProdutoController extends Controller {
         $produto = $this->product->find($id);
 
         $title = 'Editando dados do produto: {$produto->name}';
-        $categorys = ['eletronicos', 'moveis', 'limpeza', 'banho'];
+        $categorys = ['eletronicos', 'moveis', 'limpezas', 'banho'];
         
         return view('painel.produtos.create-edit', compact('title', 'categorys','produto'));
     }
